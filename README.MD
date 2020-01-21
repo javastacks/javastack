@@ -17,14 +17,14 @@
 
 另外，本文在以下博客也会同步更新：
 
-- 自建博客（http://www.javastack.cn/）
-- 简书（https://www.jianshu.com/u/25c50c845c4f）
-- CSDN（https://javastack.blog.csdn.net/）
-- 知乎（https://www.zhihu.com/people/itroad）
-- 博客园（https://www.cnblogs.com/javastack/）
-- segmentfault（https://segmentfault.com/u/javastack）
-- 开源中国（https://my.oschina.net/javaroad）
-- 掘金（https://juejin.im/user/595fa65551882568ad25638f）
+- <a target="_blank" href="http://www.javastack.cn/">自建博客</a>
+- <a target="_blank" href="https://www.jianshu.com/u/25c50c845c4f">简书</a>
+- <a target="_blank" href="https://javastack.blog.csdn.net/">CSDN</a>
+- <a target="_blank" href="https://www.zhihu.com/people/itroad">知乎</a>
+- <a target="_blank" href="https://www.cnblogs.com/javastack/">博客园</a>
+- <a target="_blank" href="https://segmentfault.com/u/javastack">segmentfault</a>
+- <a target="_blank" href="https://my.oschina.net/javaroad">开源中国</a>
+- <a target="_blank" href="https://juejin.im/user/595fa65551882568ad25638f">掘金</a>
 
 另外，本文会定期更新，欢迎 Star。
 
@@ -47,13 +47,13 @@
   - [进阶](#进阶)  
 - [后端技术](#后端技术)
   - [Spring](#Spring)
-  - [Spring MVC](#Spring%20MVC)
-  - [Spring Boot](#Spring%20Boot)
-  - [Spring Cloud](#Spring%20Cloud)
+  - [Spring MVC](#Spring-MVC)
+  - [Spring Boot](#Spring-Boot)
+  - [Spring Cloud](#Spring-Cloud)
   - [MyBatis](#MyBatis)
   - [Docker](#Docker)
   - [Dubbo](#Dubbo)
-  - [Elastic Job](#Elastic%20Job)
+  - [Elastic Job](#Elastic-Job)
   - [JWT](#JWT)  
   - [Netty](#Netty)
   - [Shrio](#Shrio)  
@@ -80,7 +80,7 @@
 - [区块链](#区块链)
 - [工具](#工具)
   - [Eclipse](#Eclipse)  
-  - [Intellij IDEA](#Intellij%20IDEA)
+  - [Intellij IDEA](#Intellij-IDEA)
   - [Git](#Git)
   - [Maven](#Maven)
   - [Swagger](#Swagger)  
