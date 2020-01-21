@@ -53,6 +53,7 @@
   - [MyBatis](#MyBatis)
   - [Docker](#Docker)
   - [Dubbo](#Dubbo)
+  - [Elasticsearch](#Elasticsearch)
   - [Elastic Job](#Elastic-Job)
   - [JWT](#JWT)  
   - [Netty](#Netty)
@@ -97,18 +98,20 @@
 - [Java 中的基本数据类型转换详解](articles/Java/基础/Java%20中的基本数据类型转换详解.md)
 - [StringBuffer 和 StringBuilder 的 3 个区别](articles/Java/基础/StringBuffer%20和%20StringBuilder%20的%203%20个区别.md)
 - [switch case 支持的 6 种数据类型！](articles/Java/基础/switch%20case%20支持的%206%20种数据类型！.md)
+- [switch多值匹配骚操作，带你涨姿势！](articles/Java/集合/switch多值匹配骚操作，带你涨姿势！.md)
 - [一张图搞清楚Java异常机制](articles/Java/基础/一张图搞清楚Java异常机制.md)
 - [你真的搞懂 transient  关键字了吗？](articles/Java/基础/你真的搞懂%20transient%20关键字了吗？.md)
 - [关于 Java 序列化你不知道的 5 件事](articles/Java/基础/关于%20Java%20序列化你不知道的%205%20件事.md)
 - [关于Java序列化你应该知道的一切](articles/Java/基础/关于Java序列化你应该知道的一切.md)
 - [坑爹的 Java 可变参数，把我整得够惨。](articles/Java/基础/坑爹的%20Java%20可变参数，把我整得够惨。.md)
 - [字符串拼接 + 和 concat 的区别](articles/Java/基础/字符串拼接%20+%20和%20concat%20的区别.md)
-- [常见的3种Class级别的错误](articles/Java/基础/常见的%203%20种%20Class%20级别的错误.md)
+- [常见的 3 种 Class 级别的错误](articles/Java/基础/常见的%203%20种%20Class%20级别的错误.md)
 - [深入浅出 Java 中的包装类](articles/Java/基础/深入浅出%20Java%20中的包装类.md)
 - [通用唯一标识码 UUID 的介绍及使用。](articles/Java/基础/通用唯一标识码%20UUID%20的介绍及使用。.md)
-- [10 个深恶痛绝的 Java 异常。。](articles/Java/基础/10%20个深恶痛绝的%20Java%20异常。。.md)
+- [10 个深恶痛绝的 Java 异常。](articles/Java/基础/10%20个深恶痛绝的%20Java%20异常。。.md)
 - [Java Base64 编码解码方案总结](articles/Java/基础/Java%20Base64%20编码解码方案总结.md)
 - [Java Jar包压缩、解压使用指南](articles/Java/基础/Java%20Jar包压缩、解压使用指南.md)
+- [Java 父类强制转换子类原则](articles/Java/集合/Java%20父类强制转换子类原则.md)
 
 #### 集合
 
@@ -116,8 +119,7 @@
 - [HashMap 和 Hashtable 的 6 个区别](articles/Java/集合/HashMap%20和%20Hashtable%20的%206%20个区别.md)
 - [HashMap, ConcurrentHashMap 原理及源码](articles/Java/集合/HashMap,%20ConcurrentHashMap%20原理及源码.md)
 - [Hashtable 为什么不叫 HashTable？](articles/Java/集合/Hashtable%20为什么不叫%20HashTable？.md)
-- [Java 父类强制转换子类原则](articles/Java/集合/Java%20父类强制转换子类原则.md)
-- [switch多值匹配骚操作，带你涨姿势！](articles/Java/集合/switch多值匹配骚操作，带你涨姿势！.md)
+
 
 #### 多线程
 
@@ -149,16 +151,17 @@
 
 #### Java8
 
-- [Java8 之新特性扩展篇](articles/Java/新特性/Java8/Java8%20之新特性扩展篇.md)
 - [Java8 新特性之Lambda表达式](articles/Java/新特性/Java8/Java8%20新特性之Lambda表达式.md)
 - [Java8 新特性之Optional](articles/Java/新特性/Java8/Java8%20新特性之Optional.md)
 - [Java8 新特性之函数式接口](articles/Java/新特性/Java8/Java8%20新特性之函数式接口.md)
 - [Java8 新特性之接口默认方法与静态方法](articles/Java/新特性/Java8/Java8%20新特性之接口默认方法与静态方法.md)
 - [Java8 新特性之方法引用](articles/Java/新特性/Java8/Java8%20新特性之方法引用.md)
 - [Java8 新特性之重复注解](articles/Java/新特性/Java8/Java8%20新特性之重复注解.md)
+- [Java8 之新特性扩展篇](articles/Java/新特性/Java8/Java8%20之新特性扩展篇.md)
 
 ##### Stream
 
+- [Java 8 新特性之Stream流](articles/Java/新特性/Java8/Stream/Java%208%20新特性之Stream流.md)
 - [Java 8 创建 Stream 的 10 种方式，我保证你受益无穷!](articles/Java/新特性/Java8/Stream/Java%208%20创建%20Stream%20的%2010%20种方式，我保证你受益无穷!.md)
 - [Java 8 新特性之 Stream 流（一）基础体验](articles/Java/新特性/Java8/Stream/Java%208%20新特性之%20Stream%20流（一）基础体验.md)
 - [Java 8 新特性之 Stream 流（七）流与迭代器，流系列大结局！](articles/Java/新特性/Java8/Stream/Java%208%20新特性之%20Stream%20流（七）流与迭代器，流系列大结局！.md)
@@ -167,7 +170,6 @@
 - [Java 8 新特性之 Stream 流（五）映射](articles/Java/新特性/Java8/Stream/Java%208%20新特性之%20Stream%20流（五）映射.md)
 - [Java 8 新特性之 Stream 流（六）收集](articles/Java/新特性/Java8/Stream/Java%208%20新特性之%20Stream%20流（六）收集.md)
 - [Java 8 新特性之 Stream 流（四）并行流](articles/Java/新特性/Java8/Stream/Java%208%20新特性之%20Stream%20流（四）并行流.md)
-- [Java 8 新特性之Stream流](articles/Java/新特性/Java8/Stream/Java%208%20新特性之Stream流.md)
 
 #### Java9
 
@@ -200,7 +202,7 @@
 - [Java 对象引用四个级别（强、软、弱、虚）](articles/Java/进阶/Java%20对象引用四个级别（强、软、弱、虚）.md)
 - [Java 异常处理 10 个最佳实践](articles/Java/进阶/Java%20异常处理%2010%20个最佳实践.md)
 - [Java 类初始化顺序，3个示例带你躺坑。](articles/Java/进阶/Java%20类初始化顺序，3个示例带你躺坑。.md)
-- [Java 自定义ClassLoader 实战](articles/Java/进阶/Java%20自定义ClassLoader%20实战.md)
+- [Java 自定义 ClassLoader 实战](articles/Java/进阶/Java%20自定义%20ClassLoader%20实战.md)
 - [不能用 + 拼接字符串？ 这次我要吊打面试官！](articles/Java/进阶/不能用%20+%20拼接字符串？%20这次我要吊打面试官！.md)
 - [别再写 bug 了，避免空指针的 5 个案例！](articles/Java/进阶/别再写%20bug%20了，避免空指针的%205%20个案例！.md)
 - [字符串 substring 方法在 JDK 6,7,8 中的差异。](articles/Java/进阶/字符串%20substring%20方法在%20JDK%206,7,8%20中的差异。.md)
@@ -228,13 +230,13 @@
 
 #### Spring Boot
 
-- [Spring Boot 1.5.10 发布：修复重要安全漏洞！！！](articles/后端技术/Spring%20Boot/Spring%20Boot%201.5.10%20发布：修复重要安全漏洞！！！.md)
-- [Spring Boot 2.0 正式发布！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.0%20正式发布！.md)
-- [Spring Boot 2.1.0 已发布，7 个重大更新！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.1.0%20已发布，7%20个重大更新！.md)
-- [Spring Boot 2.1.5 正式发布，1.5.x 即将结束使命！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.1.5%20正式发布，1.5.x%20即将结束使命！.md)
-- [Spring Boot 2.2 增加了一个新功能，启动飞起~](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2%20增加了一个新功能，启动飞起~.md)
-- [Spring Boot 2.2.1 发布，一个有点坑的版本！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2.1%20发布，一个有点坑的版本！.md)
 - [Spring Boot 2.2.2 发布，新增 2 个新特性！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2.2%20发布，新增%202%20个新特性！.md)
+- [Spring Boot 2.2.1 发布，一个有点坑的版本！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2.1%20发布，一个有点坑的版本！.md)
+- [Spring Boot 2.2 增加了一个新功能，启动飞起~](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2%20增加了一个新功能，启动飞起~.md)
+- [Spring Boot 2.1.5 正式发布，1.5.x 即将结束使命！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.1.5%20正式发布，1.5.x%20即将结束使命！.md)
+- [Spring Boot 2.1.0 已发布，7 个重大更新！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.1.0%20已发布，7%20个重大更新！.md)
+- [Spring Boot 2.0 正式发布！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.0%20正式发布！.md)
+- [Spring Boot 1.5.10 发布：修复重要安全漏洞！！！](articles/后端技术/Spring%20Boot/Spring%20Boot%201.5.10%20发布：修复重要安全漏洞！！！.md)
 - [Spring Boot 2.x 与 1.x 的区别，以及如何做版本迁移](articles/后端技术/Spring%20Boot/Spring%20Boot%202.x%20与%201.x%20的区别，以及如何做版本迁移.md)
 - [Spring Boot 2.x 启动全过程源码分析（上）入口类剖析](articles/后端技术/Spring%20Boot/Spring%20Boot%202.x%20启动全过程源码分析（上）入口类剖析.md)
 - [Spring Boot 2.x 启动全过程源码分析（下）运行方法剖析](articles/后端技术/Spring%20Boot/Spring%20Boot%202.x%20启动全过程源码分析（下）运行方法剖析.md)
@@ -287,28 +289,27 @@
 
 #### Spring Cloud
 
-- [Spring Cloud @RefreshScope 原理是什么？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20@RefreshScope%20原理是什么？.md)
-- [Spring Cloud Alibaba Sentinel%20整合 Feign 的设计实现](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Alibaba%20Sentinel%20整合%20Feign%20的设计实现.md)
+- [Spring Cloud 是什么？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20是什么？.md)
+- [Spring Cloud Greenwich.SR4 发布了，跟不上了……](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Greenwich.SR4%20发布了，跟不上了…….md)
+- [Spring Cloud Greenwich 正式发布，Hystrix 即将寿终正寝。。](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Greenwich%20正式发布，Hystrix%20即将寿终正寝。。.md)
+- [Spring Cloud 升级最新 Greenwich 版本，舒服了~](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20升级最新%20Greenwich%20版本，舒服了~.md)
+- [Spring Cloud 升级最新 Finchley 版本，踩了所有的坑！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20升级最新%20Finchley%20版本，踩了所有的坑！.md)
+- [Spring Cloud Finchley 正式发布，包含 4个重大更新！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Finchley%20正式发布，包含%204%20个重大更新！.md)
 - [Spring Cloud Eureka 常用配置详解，建议收藏！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20常用配置详解，建议收藏！.md)
 - [Spring Cloud Eureka 注册中心集群搭建，Greenwich 最新版！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20注册中心集群搭建，Greenwich%20最新版！.md)
 - [Spring Cloud Eureka 注册安全一定要做到位！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20注册安全一定要做到位！.md)
 - [Spring Cloud Eureka 自我保护机制](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20自我保护机制.md)
 - [Spring Cloud Eureka 自我保护机制实战分析](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20自我保护机制实战分析.md)
-- [Spring Cloud Finchley 正式发布，包含 4个重大更新！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Finchley%20正式发布，包含%204%20个重大更新！.md)
 - [Spring Cloud Gateway VS Zuul%20比较，怎么选择？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Gateway%20VS%20Zuul%20比较，怎么选择？.md)
-- [Spring Cloud Greenwich 正式发布，Hystrix 即将寿终正寝。。](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Greenwich%20正式发布，Hystrix%20即将寿终正寝。。.md)
-- [Spring Cloud Greenwich.SR4 发布了，跟不上了……](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Greenwich.SR4%20发布了，跟不上了…….md)
-- [Spring Cloud 动态刷新配置信息](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20动态刷新配置信息.md)
-- [Spring Cloud 升级最新 Finchley 版本，踩了所有的坑！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20升级最新%20Finchley%20版本，踩了所有的坑！.md)
-- [Spring Cloud 升级最新 Greenwich 版本，舒服了~](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20升级最新%20Greenwich%20版本，舒服了~.md)
 - [Spring Cloud 多版本管理那些事。](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20多版本管理那些事。.md)
 - [Spring Cloud 如何动态刷新 Git 仓库配置？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20如何动态刷新%20Git%20仓库配置？.md)
-- [Spring Cloud 是什么？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20是什么？.md)
+- [Spring Cloud @RefreshScope 原理是什么？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20@RefreshScope%20原理是什么？.md)
 - [Spring Cloud 服务安全连接](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20服务安全连接.md)
 - [Spring Cloud 注册中心高可用搭建](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20注册中心高可用搭建.md)
 - [Spring Cloud 配置中心内容加密](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20配置中心内容加密.md)
 - [Spring Cloud 配置中心客户端读取配置](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20配置中心客户端读取配置.md)
 - [Spring Cloud 配置中心高可用搭建](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20配置中心高可用搭建.md)
+- [Spring Cloud Alibaba Sentinel%20整合 Feign 的设计实现](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Alibaba%20Sentinel%20整合%20Feign%20的设计实现.md)
 - [凉凉了，Eureka 宣布停更，Spring Cloud 何去何从？](articles/后端技术/Spring%20Cloud/凉凉了，Eureka%20宣布停更，Spring%20Cloud%20何去何从？.md)
 - [厉害了，Spring Cloud for Alibaba 来了！](articles/后端技术/Spring%20Cloud/厉害了，Spring%20Cloud%20for%20Alibaba%20来了！.md)
 
@@ -327,6 +328,10 @@
 - [厉害了，Dubbo 正式毕业！](articles/后端技术/Dubbo/厉害了，Dubbo%20正式毕业！.md)
 - [惊艳，Dubbo域名已改，也不再局限于Java！！](articles/后端技术/Dubbo/惊艳，Dubbo域名已改，也不再局限于Java！！.md)
 - [重大利好，Dubbo 3.0要来了。](articles/后端技术/Dubbo/重大利好，Dubbo%203.0要来了。.md)
+
+#### Elasticsearch
+
+待更新……
 
 #### Elastic Job
 
@@ -415,21 +420,21 @@
 
 #### Redis
 
+- [Redis是什么？4大优势，必学中间件！](articles/数据库/Redis/Redis是什么？4大优势，必学中间件！.md)
+- [Redis 的 8 大应用场景！](articles/数据库/Redis/Redis%20的%208%20大应用场景！.md)
 - [Redis Linux 安装运行实战全记录](articles/数据库/Redis/Redis%20Linux%20安装运行实战全记录.md)
+- [超详细的 Redis Cluster 官方集群搭建指南](articles/数据库/Redis/超详细的%20Redis%20Cluster%20官方集群搭建指南.md)
 - [Redis 再牛逼，也得设置密码！！](articles/数据库/Redis/Redis%20再牛逼，也得设置密码！！.md)
 - [Redis 如何分析慢查询操作？](articles/数据库/Redis/Redis%20如何分析慢查询操作？.md)
 - [Redis 常用操作命令，非常详细！](articles/数据库/Redis/Redis%20常用操作命令，非常详细！.md)
-- [Redis 的 8 大应用场景！](articles/数据库/Redis/Redis%20的%208%20大应用场景！.md)
 - [Redisson - Redis官方推荐的分布式协调客服端](articles/数据库/Redis/Redisson%20-%20Redis官方推荐的分布式协调客服端.md)
-- [Redis是什么？4大优势，必学中间件！](articles/数据库/Redis/Redis是什么？4大优势，必学中间件！.md)
 - [Spring Boot Redis Cluster 实战干货](articles/数据库/Redis/Spring%20Boot%20Redis%20Cluster%20实战干货.md)
 - [Spring Data Redis 详解及实战一文搞定](articles/数据库/Redis/Spring%20Data%20Redis%20详解及实战一文搞定.md)
 - [一个致命的 Redis 命令，导致公司损失 400 万！！](articles/数据库/Redis/一个致命的%20Redis%20命令，导致公司损失%20400%20万！！.md)
-- [超详细的 Redis Cluster 官方集群搭建指南](articles/数据库/Redis/超详细的%20Redis%20Cluster%20官方集群搭建指南.md)
 
 #### MongoDB
 
-- [MongoDB 从Oracle导入数据](articles/数据库/MongoDB/MongoDB%20从Oracle导入数据.md)
+- [什么是 MongoDB](articles/数据库/MongoDB/什么是%20MongoDB.md)
 - [MongoDB 删除数据用法](articles/数据库/MongoDB/MongoDB%20删除数据用法.md)
 - [MongoDB 安装、配置、启动、连接](articles/数据库/MongoDB/MongoDB%20安装、配置、启动、连接.md)
 - [MongoDB 插入数据用法](articles/数据库/MongoDB/MongoDB%20插入数据用法.md)
@@ -438,7 +443,7 @@
 - [MongoDB 查询数据用法](articles/数据库/MongoDB/MongoDB%20查询数据用法.md)
 - [MongoDB 索引篇](articles/数据库/MongoDB/MongoDB%20索引篇.md)
 - [MongoDB 集成到SpringBoot](articles/数据库/MongoDB/MongoDB%20集成到SpringBoot.md)
-- [什么是 MongoDB](articles/数据库/MongoDB/什么是%20MongoDB.md)
+- [MongoDB 从Oracle导入数据](articles/数据库/MongoDB/MongoDB%20从Oracle导入数据.md)
 
 ## 架构设计
 
@@ -485,22 +490,22 @@
 
 ## 行业动态
 
-- [6月来了，Java还是第一！](articles/行业动态/6月来了，Java还是第一！.md)
-- [Eclipse 代替 Oracle 接管 Java EE](articles/行业动态/Eclipse%20代替%20Oracle%20接管%20Java%20EE.md)
-- [Elastic Search 上市了，市值翻倍，这群人财务自由了！](articles/行业动态/Elastic%20Search%20上市了，市值翻倍，这群人财务自由了！.md)
 - [GitHub for mobile 来了，码农苦逼了！](articles/行业动态/GitHub%20for%20mobile%20来了，码农苦逼了！.md)
+- [全球 IPv4 地址正式耗尽](articles/行业动态/全球%20IPv4%20地址正式耗尽.md)
+- [今天是 Java 诞生日，Java 24 岁了！](articles/行业动态/今天是%20Java%20诞生日，Java%2024%20岁了！.md)
+- [6月来了，Java还是第一！](articles/行业动态/6月来了，Java还是第一！.md)
+- [Elastic Search 上市了，市值翻倍，这群人财务自由了！](articles/行业动态/Elastic%20Search%20上市了，市值翻倍，这群人财务自由了！.md)
 - [Hystrix 停止开发，Spring Cloud 何去何从？](articles/行业动态/Hystrix%20停止开发，Spring%20Cloud%20何去何从？.md)
 - [Java 11 快要来了，编译 & 运行一个命令搞定！](articles/行业动态/Java%2011%20快要来了，编译%20&%20运行一个命令搞定！.md)
 - [Java 13 发布了！](articles/行业动态/Java%2013%20发布了！.md)
 - [Java 9 被无情抛弃，Java 8 直接升级到 Java10！！](articles/行业动态/Java%209%20被无情抛弃，Java%208%20直接升级到%20Java%2010！！.md)
 - [Java 序列化技术即将被废除！！！](articles/行业动态/Java%20序列化技术即将被废除！！！.md)
 - [Junit5 新功能一览](articles/行业动态/Junit5%20新功能一览.md)
-- [今天是 Java 诞生日，Java 24 岁了！](articles/行业动态/今天是%20Java%20诞生日，Java%2024%20岁了！.md)
-- [全球 IPv4 地址正式耗尽](articles/行业动态/全球%20IPv4%20地址正式耗尽.md)
 - [天了噜，Java 8 要停止维护了！](articles/行业动态/天了噜，Java%208%20要停止维护了！.md)
 - [屌炸天，Oracle 发布了一个全栈虚拟机！](articles/行业动态/屌炸天，Oracle%20发布了一个全栈虚拟机！.md)
 - [恭喜微微软喜当爹，Github 嫁入豪门。](articles/行业动态/恭喜微微软喜当爹，Github%20嫁入豪门。.md)
 - [新年放大招：Github 私库免费了！](articles/行业动态/新年放大招：Github%20私库免费了！.md)
+- [Eclipse 代替 Oracle 接管 Java EE](articles/行业动态/Eclipse%20代替%20Oracle%20接管%20Java%20EE.md)
 
 ## Linux
 
@@ -619,8 +624,10 @@
 
 ## 结束语
 
+不定期陆续更新中……
+
 希望大家能真正学到东西，有错误之处，欢迎提出。
 
-如果你想投稿，关注微信公众号，回复：投稿。
+如果你想投稿贡献、转载，关注微信公众号了解详情，关注微信公众号，最新干货，第一时间推送。
 
 ![](http://img.javastack.cn/javastack.png)
