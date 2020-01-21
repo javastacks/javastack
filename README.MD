@@ -95,7 +95,7 @@
 #### 基础
 
 - [Java 中的基本数据类型转换详解](articles/Java/基础/Java%20中的基本数据类型转换详解.md)
-- [StringBuffer 和 StringBuilder%20的%203%20个区别](articles/Java/基础/StringBuffer%20和%20StringBuilder%20的%203%20个区别.md)
+- [StringBuffer 和 StringBuilder 的 3 个区别](articles/Java/基础/StringBuffer%20和%20StringBuilder%20的%203%20个区别.md)
 - [switch case 支持的 6 种数据类型！](articles/Java/基础/switch%20case%20支持的%206%20种数据类型！.md)
 - [一张图搞清楚Java异常机制](articles/Java/基础/一张图搞清楚Java异常机制.md)
 - [你真的搞懂 transient  关键字了吗？](articles/Java/基础/你真的搞懂%20transient%20关键字了吗？.md)
@@ -126,7 +126,7 @@
 - [Java 多线程可以分组，还能这样玩！](articles/Java/多线程/Java%20多线程可以分组，还能这样玩！.md)
 - [Java 虚拟机对锁优化所做的努力](articles/Java/多线程/Java%20虚拟机对锁优化所做的努力.md)
 - [sleep( ) 和 wait( ) 的这 5 个区别，你知道几个？](articles/Java/多线程/sleep(%20)%20和%20wait(%20)%20的这%205%20个区别，你知道几个？.md)
-- [Synchronized 与 ReentrantLock%20的区别！](articles/Java/多线程/Synchronized%20与%20ReentrantLock%20的区别！.md)
+- [Synchronized 与 ReentrantLock 的区别！](articles/Java/多线程/Synchronized%20与%20ReentrantLock%20的区别！.md)
 - [Synchronized 有几种用法？](articles/Java/多线程/Synchronized%20有几种用法？.md)
 - [一文搞懂 Java 线程中断](articles/Java/多线程/一文搞懂%20Java%20线程中断.md)
 - [出场率比较高的一道多线程安全面试题](articles/Java/多线程/出场率比较高的一道多线程安全面试题.md)
@@ -231,7 +231,7 @@
 - [Spring Boot 1.5.10 发布：修复重要安全漏洞！！！](articles/后端技术/Spring%20Boot/Spring%20Boot%201.5.10%20发布：修复重要安全漏洞！！！.md)
 - [Spring Boot 2.0 正式发布！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.0%20正式发布！.md)
 - [Spring Boot 2.1.0 已发布，7 个重大更新！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.1.0%20已发布，7%20个重大更新！.md)
-- [Spring Boot 2.1.5 正式发布，1.5.x%20即将结束使命！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.1.5%20正式发布，1.5.x%20即将结束使命！.md)
+- [Spring Boot 2.1.5 正式发布，1.5.x 即将结束使命！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.1.5%20正式发布，1.5.x%20即将结束使命！.md)
 - [Spring Boot 2.2 增加了一个新功能，启动飞起~](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2%20增加了一个新功能，启动飞起~.md)
 - [Spring Boot 2.2.1 发布，一个有点坑的版本！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2.1%20发布，一个有点坑的版本！.md)
 - [Spring Boot 2.2.2 发布，新增 2 个新特性！](articles/后端技术/Spring%20Boot/Spring%20Boot%202.2.2%20发布，新增%202%20个新特性！.md)
@@ -257,7 +257,7 @@
 - [Spring Boot 开启的2种方式](articles/后端技术/Spring%20Boot/Spring%20Boot%20开启的2种方式.md)
 - [Spring Boot 怎么打一个可执行 Jar 包？](articles/后端技术/Spring%20Boot/Spring%20Boot%20怎么打一个可执行%20Jar%20包？.md)
 - [Spring Boot 排除自动配置的 4 种方法，关键时刻很有用！](articles/后端技术/Spring%20Boot/Spring%20Boot%20排除自动配置的%204%20种方法，关键时刻很有用！.md)
-- [Spring Boot 支持 HTTPS 如此简单，So%20easy！](articles/后端技术/Spring%20Boot/Spring%20Boot%20支持%20HTTPS%20如此简单，So%20easy！.md)
+- [Spring Boot 支持 HTTPS 如此简单，So easy！](articles/后端技术/Spring%20Boot/Spring%20Boot%20支持%20HTTPS%20如此简单，So%20easy！.md)
 - [Spring Boot 整合Thymeleaf模板引擎](articles/后端技术/Spring%20Boot/Spring%20Boot%20整合Thymeleaf模板引擎.md)
 - [Spring Boot 日志集成](articles/后端技术/Spring%20Boot/Spring%20Boot%20日志集成.md)
 - [Spring Boot 是什么？](articles/后端技术/Spring%20Boot/Spring%20Boot%20是什么？.md)
@@ -276,7 +276,7 @@
 - [Spring Boot 返回 XML 数据，一分钟搞定！](articles/后端技术/Spring%20Boot/Spring%20Boot%20返回%20XML%20数据，一分钟搞定！.md)
 - [Spring Boot 配置加载顺序](articles/后端技术/Spring%20Boot/Spring%20Boot%20配置加载顺序.md)
 - [Spring Boot 配置加载顺序详解。](articles/后端技术/Spring%20Boot/Spring%20Boot%20配置加载顺序详解。.md)
-- [Spring Boot 配置文件 bootstrap vs%20application%20到底有什么区别？](articles/后端技术/Spring%20Boot/Spring%20Boot%20配置文件%20bootstrap%20vs%20application%20到底有什么区别？.md)
+- [Spring Boot 配置文件 bootstrap vs application 到底有什么区别？](articles/后端技术/Spring%20Boot/Spring%20Boot%20配置文件%20bootstrap%20vs%20application%20到底有什么区别？.md)
 - [Spring Boot 配置随机数技巧](articles/后端技术/Spring%20Boot/Spring%20Boot%20配置随机数技巧.md)
 - [Spring Boot 集成Mybatis双数据源](articles/后端技术/Spring%20Boot/Spring%20Boot%20集成Mybatis双数据源.md)
 - [Spring Boot 面试，一个问题就干趴下了！](articles/后端技术/Spring%20Boot/Spring%20Boot%20面试，一个问题就干趴下了！.md)
@@ -288,15 +288,15 @@
 #### Spring Cloud
 
 - [Spring Cloud @RefreshScope 原理是什么？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20@RefreshScope%20原理是什么？.md)
-- [Spring Cloud Alibaba Sentinel%20整合%20Feign%20的设计实现](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Alibaba%20Sentinel%20整合%20Feign%20的设计实现.md)
+- [Spring Cloud Alibaba Sentinel%20整合 Feign 的设计实现](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Alibaba%20Sentinel%20整合%20Feign%20的设计实现.md)
 - [Spring Cloud Eureka 常用配置详解，建议收藏！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20常用配置详解，建议收藏！.md)
-- [Spring Cloud Eureka 注册中心集群搭建，Greenwich%20最新版！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20注册中心集群搭建，Greenwich%20最新版！.md)
+- [Spring Cloud Eureka 注册中心集群搭建，Greenwich 最新版！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20注册中心集群搭建，Greenwich%20最新版！.md)
 - [Spring Cloud Eureka 注册安全一定要做到位！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20注册安全一定要做到位！.md)
 - [Spring Cloud Eureka 自我保护机制](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20自我保护机制.md)
 - [Spring Cloud Eureka 自我保护机制实战分析](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Eureka%20自我保护机制实战分析.md)
-- [Spring Cloud Finchley 正式发布，包含%204%20个重大更新！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Finchley%20正式发布，包含%204%20个重大更新！.md)
+- [Spring Cloud Finchley 正式发布，包含 4个重大更新！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Finchley%20正式发布，包含%204%20个重大更新！.md)
 - [Spring Cloud Gateway VS Zuul%20比较，怎么选择？](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Gateway%20VS%20Zuul%20比较，怎么选择？.md)
-- [Spring Cloud Greenwich 正式发布，Hystrix%20即将寿终正寝。。](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Greenwich%20正式发布，Hystrix%20即将寿终正寝。。.md)
+- [Spring Cloud Greenwich 正式发布，Hystrix 即将寿终正寝。。](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Greenwich%20正式发布，Hystrix%20即将寿终正寝。。.md)
 - [Spring Cloud Greenwich.SR4 发布了，跟不上了……](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20Greenwich.SR4%20发布了，跟不上了…….md)
 - [Spring Cloud 动态刷新配置信息](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20动态刷新配置信息.md)
 - [Spring Cloud 升级最新 Finchley 版本，踩了所有的坑！](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20升级最新%20Finchley%20版本，踩了所有的坑！.md)
@@ -309,8 +309,8 @@
 - [Spring Cloud 配置中心内容加密](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20配置中心内容加密.md)
 - [Spring Cloud 配置中心客户端读取配置](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20配置中心客户端读取配置.md)
 - [Spring Cloud 配置中心高可用搭建](articles/后端技术/Spring%20Cloud/Spring%20Cloud%20配置中心高可用搭建.md)
-- [凉凉了，Eureka 宣布停更，Spring Cloud%20何去何从？](articles/后端技术/Spring%20Cloud/凉凉了，Eureka%20宣布停更，Spring%20Cloud%20何去何从？.md)
-- [厉害了，Spring Cloud for Alibaba%20来了！](articles/后端技术/Spring%20Cloud/厉害了，Spring%20Cloud%20for%20Alibaba%20来了！.md)
+- [凉凉了，Eureka 宣布停更，Spring Cloud 何去何从？](articles/后端技术/Spring%20Cloud/凉凉了，Eureka%20宣布停更，Spring%20Cloud%20何去何从？.md)
+- [厉害了，Spring Cloud for Alibaba 来了！](articles/后端技术/Spring%20Cloud/厉害了，Spring%20Cloud%20for%20Alibaba%20来了！.md)
 
 #### MyBatis
 
@@ -353,7 +353,7 @@
 #### Tomcat
 
 - [Tomcat Get 请求的坑！](articles/后端技术/Tomcat/Tomcat%20Get%20请求的坑！.md)
-- [Tomcat 集群 session 复制与 Oracle%20的坑。。](articles/后端技术/Tomcat/Tomcat%20集群%20session%20复制与%20Oracle%20的坑。。.md)
+- [Tomcat 集群 session 复制与 Oracle 的坑。。](articles/后端技术/Tomcat/Tomcat%20集群%20session%20复制与%20Oracle%20的坑。。.md)
 - [一分钟开启 Tomcat https 支持](articles/后端技术/Tomcat/一分钟开启%20Tomcat%20https%20支持.md)
 
 #### Zookeeper
@@ -492,7 +492,7 @@
 - [Hystrix 停止开发，Spring Cloud 何去何从？](articles/行业动态/Hystrix%20停止开发，Spring%20Cloud%20何去何从？.md)
 - [Java 11 快要来了，编译 & 运行一个命令搞定！](articles/行业动态/Java%2011%20快要来了，编译%20&%20运行一个命令搞定！.md)
 - [Java 13 发布了！](articles/行业动态/Java%2013%20发布了！.md)
-- [Java 9 被无情抛弃，Java 8 直接升级到 Java%2010！！](articles/行业动态/Java%209%20被无情抛弃，Java%208%20直接升级到%20Java%2010！！.md)
+- [Java 9 被无情抛弃，Java 8 直接升级到 Java10！！](articles/行业动态/Java%209%20被无情抛弃，Java%208%20直接升级到%20Java%2010！！.md)
 - [Java 序列化技术即将被废除！！！](articles/行业动态/Java%20序列化技术即将被废除！！！.md)
 - [Junit5 新功能一览](articles/行业动态/Junit5%20新功能一览.md)
 - [今天是 Java 诞生日，Java 24 岁了！](articles/行业动态/今天是%20Java%20诞生日，Java%2024%20岁了！.md)
