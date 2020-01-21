@@ -72,7 +72,8 @@
   - [MySQL](#MySQL)  
   - [Redis](#Redis)
   - [MongoDB](#MongoDB)
-- [架构设计](#架构设计)
+- [分布式技术](#分布式技术)
+- [架构](#架构)
 - [设计模式](#设计模式)
 - [数据结构 & 算法](#数据结构--算法)
 - [规范](#规范)
@@ -91,6 +92,7 @@
   - [工具类](#工具类)
 - [面试](#面试)
 - [程序人生](#程序人生)
+- [资料](#资料)
 - [其他](#其他)
 
 ## Java
@@ -100,7 +102,7 @@
 - [Java 中的基本数据类型转换详解](articles/Java/基础/Java%20中的基本数据类型转换详解.md)
 - [StringBuffer 和 StringBuilder 的 3 个区别](articles/Java/基础/StringBuffer%20和%20StringBuilder%20的%203%20个区别.md)
 - [switch case 支持的 6 种数据类型！](articles/Java/基础/switch%20case%20支持的%206%20种数据类型！.md)
-- [switch多值匹配骚操作，带你涨姿势！](articles/Java/集合/switch多值匹配骚操作，带你涨姿势！.md)
+- [switch多值匹配骚操作，带你涨姿势！](articles/Java/基础/switch多值匹配骚操作，带你涨姿势！.md)
 - [一张图搞清楚Java异常机制](articles/Java/基础/一张图搞清楚Java异常机制.md)
 - [你真的搞懂 transient  关键字了吗？](articles/Java/基础/你真的搞懂%20transient%20关键字了吗？.md)
 - [关于 Java 序列化你不知道的 5 件事](articles/Java/基础/关于%20Java%20序列化你不知道的%205%20件事.md)
@@ -113,11 +115,11 @@
 - [10 个深恶痛绝的 Java 异常。](articles/Java/基础/10%20个深恶痛绝的%20Java%20异常。。.md)
 - [Java Base64 编码解码方案总结](articles/Java/基础/Java%20Base64%20编码解码方案总结.md)
 - [Java Jar包压缩、解压使用指南](articles/Java/基础/Java%20Jar包压缩、解压使用指南.md)
-- [Java 父类强制转换子类原则](articles/Java/集合/Java%20父类强制转换子类原则.md)
+- [Java 父类强制转换子类原则](articles/Java/基础/Java%20父类强制转换子类原则.md)
 
 #### 集合
 
-- [Java 中初始化 List 集合的 6 种方式!](articles/Java/基础/Java%20中初始化%20List%20集合的%206%20种方式!.md)
+- [Java 中初始化 List 集合的 6 种方式!](articles/Java/集合/Java%20中初始化%20List%20集合的%206%20种方式!.md)
 - [HashMap 和 Hashtable 的 6 个区别](articles/Java/集合/HashMap%20和%20Hashtable%20的%206%20个区别.md)
 - [HashMap, ConcurrentHashMap 原理及源码](articles/Java/集合/HashMap,%20ConcurrentHashMap%20原理及源码.md)
 - [Hashtable 为什么不叫 HashTable？](articles/Java/集合/Hashtable%20为什么不叫%20HashTable？.md)
@@ -451,25 +453,25 @@
 - [MongoDB 集成到SpringBoot](articles/数据库/MongoDB/MongoDB%20集成到SpringBoot.md)
 - [MongoDB 从Oracle导入数据](articles/数据库/MongoDB/MongoDB%20从Oracle导入数据.md)
 
-## 架构设计
+## 分布式技术
 
-- [8 条关于 Web 前端性能的优化建议](articles/架构设计/8%20条关于%20Web%20前端性能的优化建议.md)
-- [SLA 服务可用性 4 个 9 是什么意思？怎么达到？](articles/架构设计/SLA%20服务可用性%204%20个%209%20是什么意思？怎么达到？.md)
-- [《全球架构师峰会》参会回来，想和大家分享下](articles/架构设计/《全球架构师峰会》参会回来，想和大家分享下.md)
-- [一张图告诉你为什么是服务网关](articles/架构设计/一张图告诉你为什么是服务网关.md)
-- [一张图告诉你什么是系统架构师](articles/架构设计/一张图告诉你什么是系统架构师.md)
-- [什么是灰度发布，灰度测试。](articles/架构设计/什么是灰度发布，灰度测试。.md)
-- [分布式 ID 生成器的解决方案总结](articles/架构设计/分布式%20ID%20生成器的解决方案总结.md)
-- [分布式 Session 共享解决方案](articles/架构设计/分布式%20Session%20共享解决方案.md)
-- [分布式服务防雪崩熔断器，Hystrix 理论实战。](articles/架构设计/分布式服务防雪崩熔断器，Hystrix%20理论实战。.md)
-- [分布式系统中处理参数配置的 4 种方案](articles/架构设计/分布式系统中处理参数配置的%204%20种方案.md)
-- [分布式系统架构常识：CAP理论。](articles/架构设计/分布式系统架构常识：CAP理论。.md)
-- [到底什么是分布式系统？](articles/架构设计/到底什么是分布式系统？.md)
-- [到底什么是跨域？附解决方案！](articles/架构设计/到底什么是跨域？附解决方案！.md)
-- [服务降级的概念及应用手段](articles/架构设计/服务降级的概念及应用手段.md)
-- [服务高可用：幂等性设计](articles/架构设计/服务高可用：幂等性设计.md)
-- [架构师必须掌握的 10 条设计原则](articles/架构设计/架构师必须掌握的%2010%20条设计原则.md)
-- [网站性能测试指标详解](articles/架构设计/网站性能测试指标详解.md)
+- [到底什么是分布式系统？](articles/分布式技术/到底什么是分布式系统？.md)
+- [分布式 ID 生成器的解决方案总结](articles/分布式技术/分布式%20ID%20生成器的解决方案总结.md)
+- [分布式 Session 共享解决方案](articles/分布式技术/分布式%20Session%20共享解决方案.md)
+- [分布式服务防雪崩熔断器，Hystrix 理论实战。](articles/分布式技术/分布式服务防雪崩熔断器，Hystrix%20理论实战。.md)
+- [分布式系统中处理参数配置的 4 种方案](articles/分布式技术/分布式系统中处理参数配置的%204%20种方案.md)
+- [分布式系统架构常识：CAP理论。](articles/分布式技术/分布式系统架构常识：CAP理论。.md)
+
+## 架构
+
+- [一张图告诉你为什么是服务网关](articles/架构/一张图告诉你为什么是服务网关.md)
+- [一张图告诉你什么是系统架构师](articles/架构/一张图告诉你什么是系统架构师.md)
+- [到底什么是跨域？附解决方案！](articles/架构/到底什么是跨域？附解决方案！.md)
+- [服务降级的概念及应用手段](articles/架构/服务降级的概念及应用手段.md)
+- [服务高可用：幂等性设计](articles/架构/服务高可用：幂等性设计.md)
+- [架构师必须掌握的 10 条设计原则](articles/架构/架构师必须掌握的%2010%20条设计原则.md)
+- [SLA 服务可用性 4 个 9 是什么意思？怎么达到？](articles/架构/SLA%20服务可用性%204%20个%209%20是什么意思？怎么达到？.md)
+- [什么是灰度发布，灰度测试。](articles/架构/什么是灰度发布，灰度测试。.md)
 
 ## 设计模式
 
@@ -497,6 +499,8 @@
 
 - [44 个 Java 代码性能优化总结](articles/性能优化/44%20个%20Java%20代码性能优化总结.md)
 - [90 % Java 程序员被误导的一个性能优化策略](articles/性能优化/90%20%%20Java%20程序员被误导的一个性能优化策略.md)
+- [8 条关于 Web 前端性能的优化建议](articles/性能优化/8%20条关于%20Web%20前端性能的优化建议.md)
+- [网站性能测试指标详解](articles/性能优化/网站性能测试指标详解.md)
 
 ## 行业动态
 
@@ -625,6 +629,10 @@
 - [过了所有技术面，却倒在 HR 一个问题上。。](articles/程序人生/过了所有技术面，却倒在%20HR%20一个问题上。。.md)
 - [过年回家，程序猿最怕的 5 件事，深有感触。](articles/程序人生/过年回家，程序猿最怕的%205%20件事，深有感触。.md)
 - [都几套房了，还写个毛的代码！](articles/程序人生/都几套房了，还写个毛的代码！.md)
+
+## 资料
+
+- [《全球架构师峰会》参会回来，想和大家分享下](articles/资料/《全球架构师峰会》参会回来，想和大家分享下.md)
 
 ## 其他
 
