@@ -15,7 +15,7 @@ static int count = 0;
 static CountDownLatch cdl = new CountDownLatch(1000);
 
 /**
-* 微信公众号：Java面经
+* 微信公众号：Java技术栈
 */
 public static void main(String[] args) throws Exception {
 	CountRunnable countRunnable = new CountRunnable();
