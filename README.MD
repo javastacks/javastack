@@ -17,14 +17,12 @@
 
 另外，本文在以下博客也会同步更新：
 
-- <a target="_blank" href="http://www.javastack.cn/">自建博客</a>
+- <a target="_blank" href="http://www.javastack.cn/">官方博客</a>
 - <a target="_blank" href="https://www.jianshu.com/u/25c50c845c4f">简书</a>
 - <a target="_blank" href="https://javastack.blog.csdn.net/">CSDN</a>
-- <a target="_blank" href="https://www.zhihu.com/people/itroad">知乎</a>
 - <a target="_blank" href="https://www.cnblogs.com/javastack/">博客园</a>
 - <a target="_blank" href="https://segmentfault.com/u/javastack">segmentfault</a>
 - <a target="_blank" href="https://my.oschina.net/javaroad">开源中国</a>
-- <a target="_blank" href="https://juejin.im/user/595fa65551882568ad25638f">掘金</a>
 
 另外，本文会定期更新，欢迎 Star。
 
