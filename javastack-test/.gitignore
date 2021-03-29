@@ -138,4 +138,4 @@ Icon
 op-activiti/src/main/resources/mapper/test.txt
 op-task/op-task-autocheck/src/main/resources/mapper/test.txt
 /build.xml
-/src/main/java/cn/javastack/test/Test.java
+Test.java
