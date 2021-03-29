@@ -1,4 +1,4 @@
-package jdk.task;
+package cn.javastack.test.jdk.task;
 
 import java.util.Random;
 import java.util.StringTokenizer;
