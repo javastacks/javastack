@@ -116,7 +116,7 @@ public class SortTest {
      * @from: 公众号Java技术栈
      */
     private static void sortWithJdk8parallelStream() {
-        System.out.println("=====jdk8 Stream 排序=====");
+        System.out.println("=====jdk8 Parallel Stream 排序=====");
         List<User> list = new ArrayList<>(LIST);
 
         list = list.parallelStream().sorted(User::compareAge).collect(Collectors.toList());
