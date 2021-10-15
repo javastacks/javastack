@@ -55,6 +55,7 @@ public class StreamThreadSafeTest {
 
         List list3 = list1.parallelStream().map(e -> {
             String result = e + " " + threadLocal.get();
+            System.out.println(Thread.currentThread().getName());
             return result;
         }).collect(Collectors.toList());
         list3.forEach(System.out::println);
