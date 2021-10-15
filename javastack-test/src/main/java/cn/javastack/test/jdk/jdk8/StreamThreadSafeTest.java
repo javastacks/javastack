@@ -17,6 +17,10 @@ public class StreamThreadSafeTest {
         test2();
     }
 
+    /**
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
     private static void test1() {
         List<Integer> list1 = new ArrayList<>();
         for (int i = 0; i < 100000; i++) {
@@ -27,6 +31,10 @@ public class StreamThreadSafeTest {
         list1.parallelStream().forEach(e -> list2.add(e));
     }
 
+    /**
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
     private static void test2() {
         List<String> list1 = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
