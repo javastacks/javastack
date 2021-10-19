@@ -1,5 +1,7 @@
 package cn.javastack.test.jdk.thread;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.TimeUnit;
 
@@ -9,15 +11,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class ExchangeData {
 
-    /**
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    public static void main(String[] args) throws InterruptedException {
-        test4();
-    }
-
-    private static void test1() {
+    @Test
+    public void test1() {
         Exchanger exchanger = new Exchanger();
 
         new Thread(() -> {
@@ -47,7 +42,8 @@ public class ExchangeData {
         }).start();
     }
 
-    private static void test2() {
+    @Test
+    public void test2() {
         Exchanger exchanger = new Exchanger();
 
         new Thread(() -> {
@@ -64,7 +60,8 @@ public class ExchangeData {
         }).start();
     }
 
-    private static void test3() throws InterruptedException {
+    @Test
+    public void test3() throws InterruptedException {
         Exchanger exchanger = new Exchanger();
 
         Thread thread = new Thread(() -> {
@@ -87,7 +84,8 @@ public class ExchangeData {
         thread.interrupt();
     }
 
-    private static void test4() {
+    @Test
+    public void test4() {
         Exchanger exchanger = new Exchanger();
 
         for (int i = 1; i <= 10; i++) {

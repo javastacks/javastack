@@ -1,5 +1,7 @@
 package cn.javastack.test.jdk.jdk8;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,18 +16,13 @@ public class StreamMapTest {
     private static List<String> LIST = Arrays.asList("https://", "www", ".", "javastack", ".", "cn");
     private static List<String> NUMBERS_LIST = Arrays.asList("22", "19", "89", "90");
 
-    public static void main(String[] args) {
-        map();
-        mapToLong();
-        flatMap();
-    }
-
     /**
      * map 转换
      * @author: 栈长
      * @from: 公众号Java技术栈
      */
-    private static void flatMap() {
+    @Test
+    public void flatMap() {
         String[] arr1 = {"https://", "www", ".", "javastack", ".", "cn"};
         String[] arr2 = {"公众号", ":", "Java技术栈"};
         String[] arr3 = {"作者", ":", "栈长"};
@@ -48,7 +45,8 @@ public class StreamMapTest {
      * @author: 栈长
      * @from: 公众号Java技术栈
      */
-    private static void map() {
+    @Test
+    public void map() {
         System.out.println("=====map list=====");
         List<String> mapList = LIST.stream().map(e -> e.concat("---")).collect(Collectors.toList());
         mapList.forEach(System.out::print);
@@ -61,7 +59,8 @@ public class StreamMapTest {
      * @author: 栈长
      * @from: 公众号Java技术栈
      */
-    private static void mapToLong() {
+    @Test
+    public void mapToLong() {
         System.out.println("=====map to long list=====");
         List<Long> longList = NUMBERS_LIST.stream().mapToLong(Long::valueOf).boxed().collect(Collectors.toList());
         longList.forEach(System.out::println);

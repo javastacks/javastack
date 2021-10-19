@@ -78,7 +78,7 @@ public class JdkTask {
      * 线程池定时任务
      * 来源公众号：Java技术栈
      */
-    public static void poolTask(){
+    public static void poolTask() {
         ScheduledExecutorService pool = Executors.newScheduledThreadPool(10);
 
         pool.scheduleAtFixedRate(() -> {

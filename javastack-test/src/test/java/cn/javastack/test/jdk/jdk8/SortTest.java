@@ -3,6 +3,7 @@ package cn.javastack.test.jdk.jdk8;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,47 +31,197 @@ public class SortTest {
     };
 
     /**
+     * jdk8 Collections 排序
      * @author: 栈长
      * @from: 公众号Java技术栈
      */
-    public static void main(String[] args) {
-        // jdk8 之前的排序
-        sortPreJdk8();
+    @Test
+    public void sortWithCollections() {
+        System.out.println("=====jdk8 Collections 排序=====");
+        List<User> list = new ArrayList<>(LIST);
 
-        // jdk8 lambda 排序，带参数类型
-        sortWithJdk8Lambda1();
+        Collections.sort(list, User::compareAge);
 
-        // jdk8 lambda排序，不带参数类型
-        sortWithJdk8Lambda2();
+//        Collections.sort(list, (u1, u2) -> u1.getAge().compareTo(u2.getAge()));
+//        Collections.sort(list, Comparator.comparing(User::getAge));
 
-        // jdk8 静态方法引用排序
-        sortWithJdk8StaticMethodRef();
-
-        // jdk8 实例方法引用排序
-        sortWithJdk8InstanceMethodRef();
-
-        // jdk8 Comparator 工具类排序（升序）
-        sortWithJdk8ComparatorAsc();
-
-        // jdk8 Comparator 工具类排序（降序）
-        sortWithJdk8ComparatorDesc();
-
-        // jdk8 组合排序
-        sortGroupWithJdk8();
-
-        // jdk8 Stream 排序
-        sortWithJdk8Stream();
-
-        // jdk8 并行 Stream 排序
-        sortWithJdk8parallelStream();
-
-        // jdk8 Collections 排序
-        sortWithCollections();
-
-        sortSpeed();
+        list.forEach(System.out::println);
+        System.out.println();
     }
 
-    public static void sortSpeed() {
+    /**
+     * jdk8 并行 Stream 排序
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8parallelStream() {
+        System.out.println("=====jdk8 Parallel Stream 排序=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list = list.parallelStream().sorted(User::compareAge).collect(Collectors.toList());
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 Stream 排序
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8Stream() {
+        System.out.println("=====jdk8 Stream 排序=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list = list.stream().sorted(User::compareAge).collect(Collectors.toList());
+
+//        list = list.stream().sorted((u1, u2) -> u1.getAge().compareTo(u2.getAge())).collect(Collectors.toList());
+//        list = list.stream().sorted(Comparator.comparing(User::getAge)).collect(Collectors.toList());
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 组合排序，Comparator提供的静态方法，先按年纪排序，年纪相同的按名称排序
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortGroupWithJdk8() {
+        System.out.println("=====jdk8 组合排序=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list.sort(Comparator.comparing(User::getAge).thenComparing(User::getName));
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 Comparator 工具类排序（降序）
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8ComparatorDesc() {
+        System.out.println("=====jdk8 降序降序=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list.sort(Comparator.comparing(User::getAge).reversed());
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 Comparator 工具类排序（升序）
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8ComparatorAsc() {
+        System.out.println("=====jdk8 Comparator 工具类排序=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list.sort(Comparator.comparing(User::getAge));
+
+//        list.sort(Comparator.comparing((user) -> user.getAge()));
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 静态方法引用排序
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8StaticMethodRef() {
+        System.out.println("=====jdk8 静态方法引用排序=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list.sort(User::compareAge);
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 lambda 排序，不带参数类型
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8Lambda2() {
+        System.out.println("=====jdk8 lambda 排序，不带参数类型=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list.sort((u1, u2) -> u1.getAge().compareTo(u2.getAge()));
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 lambda 排序，带参数类型
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8Lambda1() {
+        System.out.println("=====jdk8 lambda 排序，带参数类型=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list.sort((User u1, User u2) -> u1.getAge().compareTo(u2.getAge()));
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    /**
+     * jdk8 之前的排序
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortPreJdk8() {
+        System.out.println("=====jdk8 之前的排序=====");
+        List<User> list = new ArrayList<>(LIST);
+        Collections.sort(list, new Comparator<User>() {
+            @Override
+            public int compare(User u1, User u2) {
+                return u1.getAge().compareTo(u2.getAge());
+            }
+        });
+
+        for (User user : list) {
+            System.out.println(user);
+        }
+        System.out.println();
+    }
+
+    /**
+     * jdk8 实例方法引用排序
+     * @author: 栈长
+     * @from: 公众号Java技术栈
+     */
+    @Test
+    public void sortWithJdk8InstanceMethodRef() {
+        System.out.println("=====jdk8 实例方法引用排序=====");
+        List<User> list = new ArrayList<>(LIST);
+
+        list.sort(User.getInstance()::compare);
+
+        list.forEach(System.out::println);
+        System.out.println();
+    }
+
+    @Test
+    public void sortSpeed() {
         List<User> list = new ArrayList<>();
         for (int i = 0; i < 1000000; i++) {
             list.add(new User("user" + i, i));
@@ -90,185 +241,6 @@ public class SortTest {
         List<User> list3 = new ArrayList<>(list);
         list3.stream().sorted(User::compareAge).collect(Collectors.toList());
         System.out.println("Stream.sorted: " + (System.currentTimeMillis() - start));
-    }
-
-    /**
-     * jdk8 Collections 排序
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithCollections() {
-        System.out.println("=====jdk8 Collections 排序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        Collections.sort(list, User::compareAge);
-
-//        Collections.sort(list, (u1, u2) -> u1.getAge().compareTo(u2.getAge()));
-//        Collections.sort(list, Comparator.comparing(User::getAge));
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 并行 Stream 排序
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8parallelStream() {
-        System.out.println("=====jdk8 Parallel Stream 排序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list = list.parallelStream().sorted(User::compareAge).collect(Collectors.toList());
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 Stream 排序
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8Stream() {
-        System.out.println("=====jdk8 Stream 排序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list = list.stream().sorted(User::compareAge).collect(Collectors.toList());
-
-//        list = list.stream().sorted((u1, u2) -> u1.getAge().compareTo(u2.getAge())).collect(Collectors.toList());
-//        list = list.stream().sorted(Comparator.comparing(User::getAge)).collect(Collectors.toList());
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 组合排序，Comparator提供的静态方法，先按年纪排序，年纪相同的按名称排序
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortGroupWithJdk8() {
-        System.out.println("=====jdk8 组合排序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list.sort(Comparator.comparing(User::getAge).thenComparing(User::getName));
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 Comparator 工具类排序（降序）
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8ComparatorDesc() {
-        System.out.println("=====jdk8 降序降序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list.sort(Comparator.comparing(User::getAge).reversed());
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 Comparator 工具类排序（升序）
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8ComparatorAsc() {
-        System.out.println("=====jdk8 Comparator 工具类排序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list.sort(Comparator.comparing(User::getAge));
-
-//        list.sort(Comparator.comparing((user) -> user.getAge()));
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 实例方法引用排序
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8InstanceMethodRef() {
-        System.out.println("=====jdk8 实例方法引用排序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list.sort(User.getInstance()::compare);
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 静态方法引用排序
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8StaticMethodRef() {
-        System.out.println("=====jdk8 静态方法引用排序=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list.sort(User::compareAge);
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 lambda 排序，不带参数类型
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8Lambda2() {
-        System.out.println("=====jdk8 lambda 排序，不带参数类型=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list.sort((u1, u2) -> u1.getAge().compareTo(u2.getAge()));
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 lambda 排序，带参数类型
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortWithJdk8Lambda1() {
-        System.out.println("=====jdk8 lambda 排序，带参数类型=====");
-        List<User> list = new ArrayList<>(LIST);
-
-        list.sort((User u1, User u2) -> u1.getAge().compareTo(u2.getAge()));
-
-        list.forEach(System.out::println);
-        System.out.println();
-    }
-
-    /**
-     * jdk8 之前的排序
-     * @author: 栈长
-     * @from: 公众号Java技术栈
-     */
-    private static void sortPreJdk8() {
-        System.out.println("=====jdk8 之前的排序=====");
-        List<User> list = new ArrayList<>(LIST);
-        Collections.sort(list, new Comparator<User>() {
-            @Override
-            public int compare(User u1, User u2) {
-                return u1.getAge().compareTo(u2.getAge());
-            }
-        });
-
-        for (User user : list) {
-            System.out.println(user);
-        }
-        System.out.println();
     }
 
     @NoArgsConstructor
