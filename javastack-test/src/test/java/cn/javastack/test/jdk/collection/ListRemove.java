@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ * 循环删除 List 元素
  * @author: 栈长
  * @from: 公众号Java技术栈
  */
