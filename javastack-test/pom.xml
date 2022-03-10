@@ -11,7 +11,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.0</version>
+        <version>2.6.4</version>
     </parent>
 
     <properties>
@@ -20,23 +20,26 @@
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <testable.version>0.4.9</testable.version>
         <junit.version>5.6.2</junit.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <netty-all.version>4.1.52.Final</netty-all.version>
+        <lombok.version>1.18.12</lombok.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
+            <version>${lombok.version}</version>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.52.Final</version>
+            <version>${netty-all.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.11</version>
+            <version>${commons-lang3.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
