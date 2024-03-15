@@ -11,7 +11,7 @@ StringBuffer 和 StringBuilder 它们都是可变的字符串，不过它们之�
 
 ## 区别1：线程安全
 
-StringBuffer：线程安全，StringBuilder：线程不安全。因为 StringBuffer 的所有公开方法都是 synchronized 修饰的，而 StringBuilder 并没有 StringBuilder 修饰。
+StringBuffer：线程安全，StringBuilder：线程不安全。因为 StringBuffer 的所有公开方法都是 synchronized 修饰的，而 StringBuilder 并没有 synchronized 修饰。
 
 **StringBuffer 代码片段：**
 
