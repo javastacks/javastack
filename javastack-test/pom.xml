@@ -18,7 +18,7 @@
         <junit.version>5.9.0</junit.version>
         <netty-all.version>4.1.52.Final</netty-all.version>
         <lombok.version>1.18.24</lombok.version>
-        <commons-io.version>2.11.0</commons-io.version>
+        <commons-io.version>2.14.0</commons-io.version>
         <commons-collections4.version>4.4</commons-collections4.version>
     </properties>
 
